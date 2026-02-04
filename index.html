@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Latif AYEVA | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ============ Styles généraux ============ */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #4b3621; /* fond cacao métal */
+      color: #f3e6da;
+      margin: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth; /* scroll smooth */
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    a {
+      color: #f39c12; /* orange métal pour liens */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ============ Header ============ */
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #f3e6da;
+    }
+    h1 {
+      margin-bottom: 5px;
+      font-size: 3em;
+      color: #f39c12;
+    }
+    .subtitle {
+      color: #f3e6da;
+      font-size: 1.2em;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #f39c12;
+      color: #4b3621;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .button:hover {
+      background-color: #e67e22;
+    }
+
+    /* ============ Menu flottant ============ */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(75,54,33,0.95);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    nav a {
+      margin: 0 15px;
+      color: #f3e6da;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    /* ============ Sections ============ */
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #f39c12;
+      border-bottom: 2px solid #f39c12;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    /* ============ Projets & Initiatives ============ */
+    .project, .initiative {
+      background: #593f2d; /* cacao plus clair */
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover, .initiative:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+    .project img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .project-title {
+      font-weight: bold;
+      font-size: 1.3em;
+      color: #f39c12;
+      margin-bottom: 5px;
+    }
+    .project-objective {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* ============ Contact ============ */
+    #contact {
+      background: #593f2d;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    #contact a {
+      color: #f39c12;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu flottant -->
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#projets">Projets</a>
+    <a href="#engagements">Engagements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Africa_orthographic.svg/500px-Africa_orthographic.svg.png" alt="Afrique">
+      <h1>Latif AYEVA</h1>
+      <p class="subtitle">Investissement d’impact et data, avec un fort intérêt pour l’éducation, la santé, l’agriculture, les logements abordables, le sport et les industries créatives.</p>
+      <a href="CV_Latif_Ayeva.pdf" target="_blank" class="button">Télécharger mon CV</a>
+    </header>
+
+    <!-- Bio professionnelle -->
+    <section id="bio">
+      <h2>Bio professionnelle</h2>
+      <p>Professionnel de la gestion d’entreprise et de l’analyse de données, je cumule plus de 10 ans d’expérience multisectorielle en banque, capital-investissement et immobilier.</p>
+      <p>Engagé dans l’écosystème entrepreneurial local, j’ai contribué bénévolement à l’accompagnement de makers lors d’ateliers collaboratifs, en partenariat avec Woelab, premier fablab togolais.</p>
+      <p>Récemment formé à l’analyse de données et à l’intelligence décisionnelle, je mets mes compétences techniques et humaines au service de projets à fort impact, dans des environnements favorisant l’innovation, l’apprentissage continu et la création de valeur durable.</p>
+    </section>
+
+    <!-- Projets professionnels -->
+    <section id="projets">
+      <h2>Projets professionnels</h2>
+
+      <div class="project">
+        <div class="project-title"><a href="#">e_jus_bio - Analyse des ventes & performance commerciale (Power BI)</a></div>
+        <div class="project-objective">Objectif : Comprendre la performance des produits d’une marque de jus bio et identifier les leviers d’amélioration commerciale.</div>
+        <ul>
+          <li>Nettoyage & transformation des données via Power Query ;</li>
+          <li>Construction d’un dashboard interactif (ventes, marges, TOP produits, distribution) ;</li>
+          <li>Analyse des comportements clients et saisonnalité ;</li>
+        </ul>
+        <img src="https://via.placeholder.com/800x400.png?text=Business+Afrique" alt="Projet e_jus_bio">
+      </div>
+
+      <div class="project">
+        <div class="project-title"><a href="#">ESG_Finance_Latif - Analyse Critères ESG & Risques financiers (Python)</a></div>
+        <div class="project-objective">Objectif : Évaluer la performance ESG d’un portefeuille d’entreprises et analyser son impact sur les risques financiers.</div>
+        <ul>
+          <li>Préparation et nettoyage des données via Pandas ;</li>
+          <li>Calcul d’indicateurs ESG et visualisation des scores ;</li>
+        </ul>
+        <img src="https://via.placeholder.com/800x400.png?text=Business+Afrique" alt="Projet ESG">
+      </div>
+
+      <div class="project">
+        <div class="project-title"><a href="#">Optimisation de la planification et financement de logements 3D</a></div>
+        <div class="project-objective">Objectif : Optimiser coût, délais et planification d’un projet de logements 3D inspiré du modèle Mvule Gardens (Kenya).</div>
+        <ul>
+          <li>Analyse des coûts de construction, délais et matériaux locaux ;</li>
+          <li>Modélisation d’un scénario optimal de production par impression 3D ;</li>
+          <li>Création d’indicateurs pour la prise de décision (budget, rendement, planning) ;</li>
+        </ul>
+        <img src="https://via.placeholder.com/800x400.png?text=Business+Afrique" alt="Projet 3D Housing">
+      </div>
+
+    </section>
+
+    <!-- Engagements & initiatives -->
+    <section id="engagements">
+      <h2>Engagements & initiatives</h2>
+      <ul>
+        <li>Conception d’une fiche Qualité en collaboration avec l’Ecole Supérieure des Arts de la Mode Togo (ESAMOD) à l’endroit des artisans-couturiers(ères) du Togo ;</li>
+        <li>Contribution à la rédaction d’un livre blanc sur l’architecture moderniste togolais, suite au workshop sur la thématique “Architecture et Mémoire”, initié par le cabinet d’architecture togolais SOMWEY Projects ;</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Vous pouvez me contacter par email : <a href="mailto:goldenlatif@gmail.com">goldenlatif@gmail.com</a></p>
+    </section>
+
+  </div>
+
+</body>
+</html>
